@@ -25,9 +25,9 @@ export default function App() {
   }
   return (
     <div className="App">
-      <label for="num-1">number 1</label>
+      <label htmlFor="num-1">number 1</label>
       <input type="number" id="num-1" onChange={getNum1}></input>
-      <label for="num-2">number 2</label>
+      <label htmlFor="num-2">number 2</label>
       <input type="number" id="num-2" onChange={getNum2}></input>
 
       <button id="add" onClick={addition}>
@@ -45,15 +45,7 @@ export default function App() {
       <button id="div" onClick={division}>
         /
       </button>
-      <div
-        style={{
-          border: "5px solid black",
-          padding: "500px;",
-          backgroundColor: "red"
-        }}
-      >
-        Your Ans will be displayed here :{ans}
-      </div>
+      <h1>Your Ans will be displayed here :{ans}</h1>
     </div>
   );
 }
